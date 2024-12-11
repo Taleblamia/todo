@@ -50,7 +50,7 @@ jobs:
       - name: Make executeable
         run: chmod +x ./gradlew
       - name: Build with Gradle
-        working-directory: ./backend
+        working-directory: ./todo-app-2024/backend
         run: ./gradlew build
 
   test-backend:
@@ -74,7 +74,7 @@ jobs:
       - name: Make executeable
         run: chmod +x ./gradlew
       - name: Test with Gradle
-        working-directory: ./backend
+        working-directory: ./todo-app-2024/backend
         run: ./gradlew test
 
   deploy-backend:
